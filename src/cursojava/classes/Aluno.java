@@ -3,6 +3,8 @@ package cursojava.classes;
 import java.util.ArrayList;
 import java.util.List;
 
+import cursojava.constantes.StatusAluno;
+
 
 public class Aluno {
 
@@ -124,12 +126,12 @@ public class Aluno {
 
 	public String aprovacao() {
 		if (media() >= 7.0) {
-			return "aprovado";
+			return StatusAluno.APROVADO;
 		} else if (media() >= 5.0 && media() < 7.0) {
-			return "recuperação";
+			return StatusAluno.RECUPERACAO;
 
 		} else {
-			return "reprovado";
+			return StatusAluno.REPROVADO;
 		}
 	}
 	

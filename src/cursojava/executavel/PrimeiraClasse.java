@@ -44,9 +44,9 @@ public class PrimeiraClasse {
 		
 		for(int pos=1; pos<=2; pos++){
 			Disciplina d = new Disciplina();
-			String disc = JOptionPane.showInputDialog(a.getNome() + "Disciplina" + pos + " :");
+			String disc = JOptionPane.showInputDialog(a.getNome() + " Disciplina" + pos + " :");
 			d.setDisciplina(disc);
-			double nota = Double.valueOf(JOptionPane.showInputDialog(a.getNome() + "Nota: " + pos + " :"));
+			double nota = Double.valueOf(JOptionPane.showInputDialog(a.getNome() + " Nota: " + pos + " :"));
 			d.setN(nota);
 			a.getDisciplinas().add(d);
 		}
